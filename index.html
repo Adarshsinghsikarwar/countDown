@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="main">
+    <!-- Time input form -->
+    <div class="form-container" id="form-container">
+      <form id="endTimeForm">
+        <label for="endTime">Enter End Time:</label>
+        <input type="datetime-local" id="endTime" required />
+        <button type="submit">Start Countdown</button>
+      </form>
+    </div>
+
+    <!-- Countdown display -->
+    <div class="overlay" id="countdown-container" style="display: none;">
+      <div class="title">We are coming soon</div>
+      <div class="title" id="end-date">--</div>
+      <div class="col">
+        <div>
+          <input type="text" readonly />
+          <br />
+          <label>Days</label>
+        </div>
+        <div>
+          <input type="text" readonly />
+          <br />
+          <label>Hours</label>
+        </div>
+        <div>
+          <input type="text" readonly />
+          <br />
+          <label>Minutes</label>
+        </div>
+        <div>
+          <input type="text" readonly />
+          <br />
+          <label>Seconds</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
